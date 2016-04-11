@@ -1,0 +1,99 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="TBHMain.master.cs" Inherits="TBHMain" %>
+
+<%@ Register Src="~/Controls/FooterCopyright.ascx" TagName="FooterCopyright" TagPrefix="uc1" %>
+<%@ Register Src="~/Controls/ThemeSelector.ascx" TagName="ThemeSelector" TagPrefix="uc2" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  
+<html>
+<head id="Head1" runat="server">
+    <title>The Beer House</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body runat="server" id="pageBody">
+    <form id="form1" runat="server">
+    
+    <div id="dHeader">
+        <%--Background LOGO image; Login/Logout ctrl & Theme selector--%>
+        <div id="dMainHeader">
+            <div id="dLogo">
+                <img id="Img1" src="~/images/tbh_logo.gif" runat="server" alt="The Beer House" enableviewstate="false" />
+            </div>
+            <div id="dLoginLinks">
+                <div id="dLoginMenu">
+                    <a id="btnDisplayLogin" href="javascript:DisplayLoginHandler();" class="LoginLink">Login</a>
+                </div>
+                <div id="dLogoutMenu">
+                    <div id="dUserName">
+                    </div>
+                    <a id="btnDisplayLogout" href="javascript:logoutHandler();" class="LoginLink">Log Out</a>
+                </div>
+            </div>
+            <div id="dThemeselector">
+                <asp:DropDownList  ID="ThemeSelector1" runat="server" > 
+                <asp:ListItem Text="LightBeer" Value="1"></asp:ListItem>
+                <asp:ListItem Text="DarkBeer" Value="2"></asp:ListItem>
+                </asp:DropDownList>
+                <asp:Button ID="SelectDropDownButton" runat="server" OnClick="SelectDropDownButton_Click"/>
+            </div>
+        </div>
+        
+        <div id="dMainNav">
+            <div id="dMenu">
+                <ul>
+                    <li><a href="<% =ResolveUrl("default.aspx") %>"><span>Home</span></a></li>
+                    <li><a href="<% =ResolveUrl("showcategories.aspx") %>"><span>Articles</span></a></li>
+                    <li><a href="<% =ResolveUrl("ShowDepartments.aspx") %>"><span>Store</span></a></li>
+                    <li><a href="<% =ResolveUrl("BrowseEvents.aspx") %>"><span>Events</span></a></li>
+                    <li><a href="<% =ResolveUrl("ShowForums.aspx") %>"><span>Forum</span></a></li>
+                    <li><a href="<% =ResolveUrl("BrowseAlbums.aspx") %>"><span>Gallery</span></a></li>
+                    <li><a href="<% =ResolveUrl("About.aspx") %>"><span>About</span></a></li>
+                    <li id="liAdmin"><a href="<% =ResolveUrl("Admin") %>"><span>Admin</span></a></li>
+                </ul>
+            </div>
+            <div id="dSocial">
+                <ul>
+                    <li><a href="http://twitter.com/thebeerhouse">
+                        <img id="Img2" runat="server" src="~/images/twitter.gif" border="0" height="24" width="24"
+                            alt="Follow The BeerHouse on Twitter" /></a> </li>
+                    <li><a href="http://facebook.com/thebeerhouse">
+                        <img id="Img3" runat="server" src="~/images/FaceBook.gif" border="0" height="24"
+                            width="24" alt="Follow The BeerHouse on Facebook" /></a> </li>
+                    <li><a href="http://myspace.com/thebeerhouse">
+                        <img id="Img4" runat="server" src="~/images/MySpace.gif" border="0" height="24" width="24"
+                            alt="Follow The BeerHouse on MySpace" /></a> </li>
+                    <li><a href="http://youtube.com/thebeerhouse">
+                        <img id="Img5" runat="server" src="~/images/Youtube.gif" border="0" height="24" width="24"
+                            alt="Follow The BeerHouse on YouTube" /></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div id="dContainer">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div id="dMainfooter">
+        <div id="footermenu">
+            <ul>
+                <li><a href="<% =ResolveUrl("default.aspx") %>"><span>Home</span></a></li>
+                <li><a href="<% =ResolveUrl("showcategories.aspx") %>"><span>News</span></a></li>
+                <li><a href="<% =ResolveUrl("ShowDepartments.aspx") %>"><span>Store</span></a></li>
+                <li><a href="<% =ResolveUrl("BrowseEvents.aspx") %>"><span>Events</span></a></li>
+                <li><a href="<% =ResolveUrl("BrowseAlbums.aspx") %>"><span>Gallery</span></a></li>
+                <li><a href="<% =ResolveUrl("Contact.aspx") %>"><span>Contact</span></a></li>
+                <li><a href="<% =ResolveUrl("Privacy.aspx") %>"><span>Privacy</span></a></li>
+                <li><a href="<% =ResolveUrl("Terms.aspx") %>"><span>Terms</span></a></li>
+                <li><a href="<% =ResolveUrl("SiteMap.aspx") %>"><span>Site Map</span></a></li>
+            </ul>
+        </div>
+        <div id="footerCopyright">
+            <uc1:FooterCopyright ID="FooterCopyright1" runat="server" CompanyName="The BeerHouse"
+                StartYear="2003" EnableViewState="false" />
+        </div>
+    </div>
+    </form>
+</body>
+</html>

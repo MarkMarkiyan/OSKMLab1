@@ -1,0 +1,1614 @@
+﻿body {
+	background: #963;
+	font: 12px Arial, Helvetica, sans-serif;
+}
+
+div#dHeader, div#footer, div#dContainer {
+	background-position: 0 0;
+	background: none repeat scroll 0 0;
+	border: none;
+	max-width: 780px;
+	margin: auto;
+}
+#dMainHeader {
+	clear: both;
+	color: #800000;
+	float: left;
+	height: 80px;
+	padding: 0;
+	max-width: 780px;
+	background: url('images/bh_header.png');
+}
+H1.dMainHeader {
+	font-size: 24px;
+	font-weight: bold;
+	color: #963;
+}
+#dLogo {
+	width: 480px;
+	float: left;
+	margin-right: 40px;
+	margin-left: 40px;
+}
+#dLoginLinks {
+	width: 200px;
+	float: right;
+	margin-top: 10px 5px 0 0;
+	padding-right: 10px;
+	padding-top: 10px;
+}
+#dLoginMenu {
+	text-align: right;
+	display: none;
+}
+#dLogoutMenu {
+	text-align: right;
+	display: none;
+}
+a.LoginLink:link {
+	padding: 2px 1px;
+	color: #FFF;
+	font-size: Small;
+	text-decoration: none;
+	font-weight: bolder;
+}
+a.LoginLink:visited {
+	padding: 2px 1px;
+	color: #FFF;
+	font-size: Small;
+	text-decoration: none;
+	font-weight: bolder;
+}
+a.LoginLink:active {
+	padding: 2px 1px;
+	color: #FFF;
+	font-size: Small;
+	text-decoration: none;
+	font-weight: bolder;
+}
+a.LoginLink:hover {
+	padding: 2px 1px;
+	color: #FFF;
+	font-size: Small;
+	text-decoration: none;
+	font-weight: bolder;
+}
+#dThemeselector {
+	text-align: right;
+	height: 80px;
+	padding: 2px;
+	font-size: 10px;
+	margin-top: 50px;
+	margin-right: 10px;
+	color: #FFF;
+}
+#dThemeselector select {
+	color: black;
+	font-size: 10px;
+	background: #e1e1e1;
+}
+#dMainNav {
+	background: url(images/menu_bg.gif) repeat-x;
+	float: left;
+	padding: 20px 0px 0px;
+	top: 85px;
+	height: 28px;
+	bottom: 100px;
+	left: 1px;
+	max-width: 780px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width:100px ) {
+#dMainNav {
+	background: url(images/menu_bg.gif) repeat-x;
+	float: left;
+	padding: 20px 0px 200px;
+	top: 85px;
+	height: 28px;
+	bottom: 100px;
+	left: 1px;
+	max-width: 780px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+}
+#dMenu {
+	max-width: 550px;
+	float: left;
+}
+#dMenu ul {
+	clear: left;
+	float: left;
+	width: 100%;
+	list-style: none;
+	margin: 1px 0 0;
+	padding: 0;
+}
+#dMenu ul li, #dSocial ul li, #footermenu ul li {
+	display: inline;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#dMenu ul li a {
+	display: block;
+	float: left;
+	margin: 0 0 0 1px;
+	padding: 3px 10px;
+	text-align: center;
+	color: #FFF;
+	text-decoration: none;
+	position: relative;
+	left: 15px;
+	font-size: medium;
+}
+#dMenu ul li a:hover {
+	background: transparent;
+	color: #CECECE;
+}
+#dMenu ul li a.active, #dMenu ul li a.active:hover {
+	font-weight: bolder;
+}
+#dMenu ul li a span {
+	display: block;
+}
+#dSocial {
+	float: right;
+	margin: 0;
+	padding: 0 6px 0 0;
+	font-size: 0;
+}
+#dSocial li a {
+	text-decoration: none;
+	padding: 0 2px;
+}
+#dMainfooter {
+	clear: both;
+	padding: 3px 0;
+	color: #808080;
+	font-size: x-small;
+	height: 16px;
+	top: 5px;
+	background: #333 none repeat scroll 0 0;
+	margin: auto;
+	width: 780px;
+}
+#footermenu ul {
+	clear: left;
+	float: left;
+	width: 500px;
+	list-style: none;
+	margin: 1px 0 0;
+	padding: 0;
+}
+#footermenu ul li a {
+	display: block;
+	float: left;
+	margin: 0 0 0 1px;
+	padding: 3px 10px;
+	text-align: center;
+	color: #FFF;
+	text-decoration: none;
+	position: relative;
+	left: 15px;
+	font-size: x-small;
+}
+#footermenu ul li a:hover {
+	background: transparent;
+	color: #fff;
+}
+#footermenu ul li a.active, #footermenu ul li a.active:hover {
+	font-weight: bolder;
+}
+#footerCopyright {
+	float: right;
+	width: 200px;
+	left: 580px;
+	color: White;
+}
+#footertext {
+	text-align: center;
+	padding-top: 3px;
+}
+div#dContainer {
+	clear: both;
+	min-height: 400px;
+	background: #FFF;
+	overflow: hidden;
+}
+#center-main-content {
+	border-right: thin solid #000080;
+	float: left;
+	margin: 5px;
+	min-height: 400px;
+	width: 360px;
+	background: #FFF;
+}
+#left-main-content, #right-main-content {
+	margin: 5px;
+	min-height: 400px;
+	width: 570px;
+	background: #FFF;
+}
+#left-main-content {
+	border-right: thin solid #000080;
+	float: left;
+}
+#right-main-content {
+	border-right: thin solid #000080;
+	float: right;
+}
+#center-content {
+	border-right: thin solid #000080;
+	float: right;
+	margin: 5px;
+	min-height: 400px;
+	width: 400px;
+	background: #fff;
+}
+#right-column, #left-column {
+	margin: 4px;
+	min-height: 190px;
+	width: 180px;
+	background: #E6BB70;
+}
+#right-column {
+	float: right;
+	left: 380px;
+}
+#left-column {
+	clear: left;
+	float: left;
+	margin-right: 5px;
+}
+#MainColHome {
+	float: left;
+	left: 0;
+	min-height: 150px;
+	width: 100%;
+}
+#MidColHome {
+	margin: 4px;
+	min-height: 190px;
+	width: 180px;
+	float: right;
+	left: 380px;
+}
+a {
+	color: #800000;
+}
+#dRSS {
+	vertical-align: middle;
+	text-align: center;
+	height: 50px;
+}
+#dRSS A {
+	color: #800000;
+	text-decoration: none;
+	vertical-align: middle;
+	font: bold 1.1em Arial, Helvetica, sans-serif;
+}
+.BHButton {
+	border: thin groove #800;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #FFF;
+	background: #900;
+}
+.fieldname td {
+	text-align: right;
+	font-size: 10px;
+	font-weight: bold;
+	width: 110px;
+}
+#dPassword {
+	clear: both;
+	text-align: left;
+	float: left;
+}
+hr {
+	color: #b45d16;
+}
+#ContentMain {
+	margin: 5px 5px 10px;
+}
+#ContentMain H1 {
+	color: #900;
+	text-align: center;
+	font: bold 16px Arial, Helvetica, sans-serif;
+}
+#FeaturedProductHome {
+	min-height: 200px;
+}
+#CurrentPollHome {
+	min-height: 200px;
+}
+#ContentTitle {
+	padding-top: 4px;
+	padding-bottom: 4px;
+	margin: auto;
+}
+#ContentTitle h1 {
+	font-size: large;
+	font-weight: bold;
+	color: #800000;
+	text-decoration: none;
+	text-align: center;
+}
+#ContentBody {
+	padding: 5px;
+	color: #000;
+	font: 11px Arial, Helvetica, sans-serif;
+}
+.SideBarbox {
+	padding: 0 1px 3px;
+	font-size: 11px;
+	text-align: center;
+	border: 1px dashed #FFF;
+	background: #C60;
+}
+.SideBarbox a {
+	color: #521300;
+	font-weight: bold;
+}
+.SideBarTitle {
+	color: #FFF;
+	background: #800000;
+	font: bold small Arial, Helvetica, sans-serif;
+}
+.SideBarTitle img {
+	float: left;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+.SideBarContent {
+	padding: 6px;
+}
+.tbhSiteMapPath {
+	padding: 2px 4px 5px;
+	color: #900;
+	margin-top: 2px 5px 0 0;
+	font: normal x-small Arial, Helvetica, sans-serif;
+}
+#breadcrumb {
+	color: White;
+	padding: 3px 3px 3px 5px;
+	font-size: 10px;
+	background: #202020;
+}
+#breadcrumb a {
+	color: Yellow;
+}
+#bannerbox {
+	border: dashed 2px #c35308;
+	margin: 20px 10px;
+	padding: 5px;
+	text-align: center;
+	background: #e1e1e1;
+}
+#bannerbox a {
+	font-size: 10px;
+	text-decoration: none;
+	color: black;
+}
+#loginbox {
+	border: thin ridge #C60;
+	position: absolute;
+	top: 16px;
+	right: 10px;
+	width: 180px;
+	height: 100px;
+	padding: 2px;
+	font-size: 10px;
+	background: #F27900;
+}
+#loginbox input {
+	color: #C30;
+	border-color: #663;
+	font-size: 10px;
+	background: #f7d582;
+}
+#liAdmin {
+	display: none;
+}
+.AltAdminRow {
+	background: #CCC;
+}
+#leftcol {
+	clear: both;
+	padding: 1px 5px 2px;
+	width: 185px;
+	font-size: 10px;
+	color: #521300;
+	float: left;
+	background: #FFF1D7;
+}
+#leftcol div.text {
+	padding: 6px;
+	text-align: justify;
+}
+#leftcol div.alternatetext {
+	padding: 6px;
+	text-align: justify;
+	background: #e1e1e1;
+}
+#leftcol div.sectiontitle, #leftcol .sectiontitle span {
+	padding: 6px 6px 6px 3px;
+	color: white;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	background: #818689;
+}
+#RightColumn {
+	color: #C60;
+	top: 10px;
+	float: right;
+	width: 160px;
+	position: absolute;
+	background: #930;
+}
+#rightcol a {
+	color: #521300;
+	vertical-align: middle;
+	font-weight: bold;
+	font-size: large;
+	text-decoration: none;
+}
+#rightcol hr {
+	color: #521300;
+	width: 85%;
+}
+#rightcol {
+	float: right;
+	padding: 1px 5px 2px;
+	width: 160px;
+	font-size: 10px;
+	min-height: 400px;
+	height: 100%;
+	background: #E6BB70;
+}
+#rightcol div.text {
+	padding: 6px;
+	text-align: justify;
+}
+#rightcol div.sectiontitle, #rightcol .sectiontitle span {
+	padding: 6px 6px 6px 3px;
+	color: #f7b76b;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	background: #706a6a;
+}
+#dShoppingCart {
+	float: right;
+	margin-right: 20px;
+}
+#ShopCartTitle {
+	padding: 6px 6px 6px 3px;
+	color: #800000;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+#ShopCartTitle H1 {
+	font-size: 1.5em;
+}
+.CartProductName {
+	width: 250px;
+}
+#DepartmentsRow {
+	background: #FFF;
+}
+#centercol {
+	padding: 1px 5px 2px;
+	width: 400px;
+	background: white;
+}
+#center2col {
+	float: left;
+	padding: 1px 5px 2px;
+	width: 600px;
+	min-height: 400px;
+	font-size: 10px;
+	left: 185px;
+	background: #FFF;
+}
+#centerLcol {
+	position: absolute;
+	clear: both;
+	float: left;
+	padding: 1px 5px 2px;
+	left: 190px;
+	top: 5px;
+	width: 580px;
+	min-height: 400px;
+	background: #FFF;
+}
+#centercolcontent {
+	padding: 15px 6px;
+}
+#centercolcontent div.sectiontitle, #centercolcontent .sectiontitle span {
+	font-weight: bold;
+	font-size: larger;
+	color: #b45d16;
+}
+#sectiontitle H2 {
+	font-weight: bold;
+	font-size: larger;
+	color: #b45d16;
+}
+.sectionsubtitle {
+	font-weight: bold;
+	padding-bottom: 4px;
+}
+#header2 {
+	padding: 0;
+	margin: 0;
+	width: 780px;
+	height: 130px;
+	background: url(images/bh_header.png);
+}
+#dUserName A {
+	color: #FFF;
+	font-size: small;
+	font-weight: bolder;
+	padding: 2px 1px;
+	text-decoration: none;
+}
+#dUserName {
+	color: #FFF;
+	font-size: small;
+	font-weight: bolder;
+	padding: 2px 1px;
+	text-decoration: none;
+}
+#headermenu {
+	position: relative;
+	top: 153px;
+	left: 245px;
+	width: 700px;
+	padding: 2px;
+}
+#adminMenu {
+	width: 50px;
+	float: left;
+	background: #c30000;
+}
+#adminView {
+	float: right;
+	height: 24px;
+	text-align: center;
+	width: 80px;
+	right: 125px;
+	position: relative;
+	color: #FFF;
+	display: none;
+	font-size: medium;
+	left: 15px;
+	margin: 0 0 0 1px;
+	padding: 3px 10px;
+	text-decoration: none;
+}
+.headermenulink {
+	text-transform: uppercase;
+	font: 17px Impact;
+}
+.headermenulink a {
+	text-decoration: none;
+	color: black;
+}
+.headermenulink a:hover {
+	text-decoration: underline overline;
+	color: black;
+}
+.highlight {
+	color: #000080;
+	background: #fefbd2;
+}
+.highlightcity {
+	background: #df2e05;
+}
+.highlightstate {
+	background: #f4c977;
+}
+.highlightcountry {
+	background: #818689;
+}
+.pollbox {
+	border: thin solid #800000;
+	font-size: 11px;
+}
+.pollcontent {
+	padding: 6px;
+}
+.pollquestion {
+	font-size: 13px;
+	font-weight: bold;
+}
+.polloptions {
+	padding-top: 10px 0 4px;
+	text-align: left;
+	color: #FFF;
+}
+.pollbar {
+	font-size: 4px;
+	background: red;
+}
+#progressbarcontainer {
+	width: 544px;
+	height: 32px;
+	border: solid 1px black;
+	padding: 1px;
+}
+#progressbar {
+	width: 0;
+	height: 32px;
+	background-repeat: repeat-x;
+	background: url(images/glass1_small.jpg);
+}
+.newsletterbox {
+	font-size: 11px;
+}
+#NewsletterBox {
+	border: thin solid #800000;
+	font-size: 11px;
+	width: 475px;
+	background: #FF9;
+}
+.newsletterboxcontent {
+	padding: 6px;
+}
+ul.NewsletterList {
+	list-style-image: url('images/filledbeer.gif');
+	list-style-type: none;
+}
+.ForumHeaderNav {
+	text-align: center;
+	font-weight: bold;
+}
+.postinfo {
+	font-weight: bold;
+	text-align: center;
+	background: #f9eaa6;
+}
+.posttitle {
+	padding: 3px;
+	margin-bottom: 10px;
+	color: black;
+	font-weight: bold;
+	text-align: right;
+	background: #f09d35;
+}
+.postbody {
+	padding: 3px;
+}
+.MoveThreadBody {
+	display: none;
+	border-top: dashed 1px;
+	border-right: dashed 1px;
+}
+.shadow {
+	float: left;
+	margin-top: 8px;
+	background: #aaa;
+}
+.shadow img {
+	margin: -4px 4px 4px -4px;
+	display: block;
+	position: relative;
+	padding: 4px;
+	border-left: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #888;
+	border-bottom: 1px solid #888;
+	background: #fcfcfc;
+}
+.ProductThumb {
+	margin: 10px 10px 10px 5px;
+	float: left;
+	background: #aaa;
+}
+.ProductThumb img {
+	margin: -4px 4px 4px -4px;
+	display: block;
+	position: relative;
+	padding: 4px;
+	border-left: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #888;
+	border-bottom: 1px solid #888;
+	background: #fcfcfc;
+}
+A.ProductTitle {
+	color: #900;
+	border-bottom-style: dotted;
+	border-width: thin;
+	text-decoration: none;
+	font: bold medium Arial, Helvetica, sans-serif;
+}
+.ProductPrice {
+	font-size: large;
+	font-weight: bold;
+}
+#FeaturedProductTable {
+	width: 90%;
+	text-align: center;
+}
+#dOrderFilter {
+	font-size: .3em;
+	margin-bottom: 12px;
+	margin-right: 10px;
+	margin-left: 5px;
+}
+#ShoppingCartItem {
+	text-align: left;
+}
+#FeaturedProductBox, #shoppingcartbox {
+	padding: 0 1px 3px;
+	font-size: 11px;
+	text-align: center;
+	border: 1px dashed #FFF;
+	background: #C60;
+}
+#FeaturedProductBox a, #shoppingcartbox a {
+	color: #521300;
+	font-weight: bold;
+}
+#FeaturedProductTitle, #shoppingcartboxtitle {
+	color: #FFF;
+	background: #800000;
+	font: bold small Arial, Helvetica, sans-serif;
+}
+#shoppingcartboxcontent {
+	padding: 6px;
+}
+.ProductImage {
+	float: left;
+	padding: 4px;
+	text-align: center;
+}
+.ProductHR {
+	width: 100%;
+	height: 1px;
+}
+.LargeInput {
+	font-size: 1.5em;
+	border: 1px solid #BAFEB1;
+	color: #3E79A4;
+	padding: 2px;
+	background: url(images/gradients/formBackground.gif) repeat-x;
+}
+.LargeInputLabel {
+	font-size: 1.3em;
+	color: #404048;
+}
+A.loginbox:link, visited {
+	color: #630;
+}
+A.loginbox:hover {
+	color: #F60;
+	font-weight: bold;
+}
+a.MainNavLink:link {
+	padding: 2px 1px;
+	color: #FFF1D7;
+	font-size: Medium;
+	text-decoration: none;
+}
+a.MainNavLink:visited {
+	padding: 2px 1px;
+	color: #FFF1D7;
+	font-size: Medium;
+	text-decoration: none;
+}
+a.MainNavLink:active {
+	padding: 2px 1px;
+	color: #FFF1D7;
+	font-size: Medium;
+	text-decoration: none;
+}
+a.MainNavLink:hover {
+	padding: 2px 1px;
+	color: #FFF1D7;
+	font-size: Medium;
+	font-weight: bold;
+	text-decoration: none;
+}
+.addressbook {
+	width: 600px;
+	font: 82% arial, helvetica, "Nimbus Sans L", sans-serif;
+	border: solid 1px #666;
+	margin-left: 30px;
+}
+.addresstitile {
+	color: #666;
+	padding: 9px 10px 7px;
+	background: #eee;
+}
+.contact-index {
+	float: left;
+	margin: 40px 0 0 30px;
+	background: #fff url(images/bg_index_border.gif) left top no-repeat;
+	width: 29px;
+	padding-top: 0.5em;
+	position: relative;
+	color: #666;
+}
+.contact-index OL {
+	background: #fff url(images/bg_index_border.gif) left bottom no-repeat;
+	padding-bottom: 0.5em;
+}
+.contact-index LI {
+	font-size: 95%;
+	margin-left: 1px;
+	list-style-type: none;
+	text-align: center;
+}
+.contact-index A {
+	color: #039;
+	font-weight: bold;
+	cursor: pointer;
+}
+.contact-index A:hover {
+	text-decoration: underline;
+	background: #eee;
+}
+.contact-list OL {
+	padding: 10px;
+	overflow: auto;
+	height: 560px;
+	background: #fff;
+}
+.contact-list LI {
+	list-style-type: none;
+	color: #666;
+}
+.contact-list H2 {
+	font-size: 140%;
+	margin: 0;
+	display: block;
+}
+.contact-list TABLE {
+	border-top: solid 2px #999;
+	padding: 7px 0 0;
+	margin: -12px 0 0 24px;
+	text-align: left;
+}
+.contact-list TABLE TD {
+	width: 170px;
+	vertical-align: top;
+	padding: 7px;
+	border-bottom: solid 1px #ccc;
+	color: #666;
+}
+.contact-list .card .contact H3 {
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	font-size: 100%;
+	display: block;
+}
+.contact-list .card .email {
+	overflow: hidden;
+	display: block;
+	font-size: 85%;
+	color: #039;
+	text-decoration: none;
+}
+.hidden {
+	display: none;
+}
+h1.TitleHeader {
+	color: #960;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 4px;
+	font: bolder medium georgia;
+}
+.grid {
+	width: 700px;
+	font-family: Tahoma;
+}
+.grid H2 {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+}
+.grid .mid {
+	padding: 3px 0 0;
+}
+.grid .datatable {
+	width: 100%;
+	color: #666;
+	border-bottom: solid 1px #bbd9ee;
+}
+.grid .datatable TH {
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 0;
+	text-align: left;
+	padding: 2px 4px;
+	color: #333;
+	border-bottom: solid 2px #bbd9ee;
+}
+.grid .datatable TH A {
+	text-decoration: none;
+	padding-right: 18px;
+	color: #06c;
+}
+.grid .datatable TH.sortasc A {
+	background: url(images/asc.gif) right center no-repeat;
+}
+.grid .datatable TH.sortdesc A {
+	background: url(images/desc.gif) right center no-repeat;
+}
+.grid .datatable TD {
+	font-size: 11px;
+	text-align: left;
+	padding: 6px 4px;
+	border-bottom: solid 1px #bbd9ee;
+}
+.grid .datatable .row:hover {
+	color: #000;
+	background: #fffacd;
+}
+.grid .datatable .first {
+	padding-left: 10px;
+}
+.grid .datatable .row:hover .first {
+	background: url(images/bullet.gif) no-repeat;
+}
+.pager {
+	font-family: arial, sans-serif;
+	text-align: center;
+	padding: 6px;
+	float: right;
+}
+.pager SPAN.command, .pager SPAN.current, .pager A.command {
+	color: #521300;
+	padding: 0 5px;
+	text-decoration: none;
+	border: none;
+	background: #FFF;
+}
+.pager A.command:hover {
+	border: solid 2px #881F00;
+	color: #fff;
+	padding: 0 3px;
+	text-decoration: none;
+	background: #521300;
+}
+.accordion {
+	background: url(images/item_bg.gif);
+	font: 8.5pt Tahoma;
+}
+.accordion .header {
+	cursor: pointer;
+	background: url(images/hd_bg.gif) repeat-x;
+	border-bottom: solid 1px #57566f;
+	border-bottom-color: #800000;
+}
+.accordion .header DIV {
+	cursor: pointer;
+	height: 30px;
+	padding-left: 40px;
+	background: no-repeat left 50%;
+}
+.accordion .header SPAN {
+	cursor: pointer;
+	font-weight: bold;
+	display: block;
+	padding-top: 8px;
+	color: #fff;
+}
+.accordion .header:hover {
+	cursor: pointer;
+	height: 31px;
+	background-color: Transparent;
+	background: url(images/hd_hover_bg.gif) repeat-x;
+	border-bottom: none;
+}
+.accordion UL {
+	padding: 0;
+	margin: 5px 5px 5px 15px;
+	list-style-type: none;
+}
+.accordion LI {
+	vertical-align: middle;
+	padding: 6px 5px 6px 25px;
+	cursor: hand;
+	background: no-repeat left center;
+}
+.accordion LI DIV {
+	padding-left: 10px;
+	color: #933;
+	cursor: hand;
+}
+.accordion LI:hover {
+	text-decoration: underline;
+}
+.LoginLinks {
+	border-top: solid 1px black;
+	margin-top: 2px;
+	padding-top: 2px;
+}
+#dAdmin H1 {
+	padding: 5px;
+	color: #800000;
+	text-decoration: none;
+	text-align: center;
+	font: bold large Arial, Helvetica, sans-serif;
+}
+a.AdminNavLink {
+	color: #800000;
+	text-decoration: none;
+	font-size: small;
+}
+.FormLabel {
+	display: block;
+	clear: both;
+	font: small Arial, Helvetica, sans-serif;
+}
+.FormInput {
+	padding-left: 110px;
+}
+a.AdminNavLink:active {
+	color: #800000;
+	text-decoration: none;
+	font-size: small;
+	font-weight: bold;
+}
+a.AdminNavLink:visited {
+	color: #800000;
+	text-decoration: none;
+	font-size: small;
+}
+a.AdminNavLink:hover {
+	color: #800000;
+	text-decoration: none;
+	font-size: small;
+	font-weight: bold;
+}
+#dFrame {
+	width: 350px;
+	margin-top: 20px;
+}
+A.dFrame {
+	color: #000;
+	font: bold small Arial, Helvetica, sans-serif;
+}
+.ListTitle {
+	margin: 1px 20px 1px 1px;
+	padding: 1px;
+	text-align: left;
+	width: 250px;
+	float: left;
+	clip: rect(auto, 200px, auto, auto);
+}
+.ListTitle A {
+	color: #b45d16;
+	font-size: small;
+}
+.ListTitle A:Hover {
+	font-weight: bold;
+}
+.AdminLayout {
+	border-style: none;
+	padding: 1px;
+	width: 95%;
+}
+.AdminLayout H1 {
+	color: #800000;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	font: bold large Arial, Helvetica, sans-serif;
+}
+#dAdminHeader {
+	margin: 5px 5px 15px;
+	display: block;
+}
+#dAdminHeader ul {
+	float: left;
+	width: 100%;
+	list-style: none;
+	margin: 1px 0 0;
+	padding: 0;
+}
+#dAdminHeader ul li {
+	display: inline;
+	list-style-type: square;
+	margin: 0;
+	padding: 0;
+}
+#dAdminHeader ul li a {
+	display: block;
+	float: left;
+	margin: 0 0 0 1px;
+	padding: 3px 10px;
+	text-align: center;
+	color: #b45d16;
+	text-decoration: none;
+	position: relative;
+	left: 15px;
+	font-size: small;
+}
+#dAdminHeader ul li a:hover {
+	background: transparent;
+	color: #b45d16;
+}
+#dAdminHeader ul li a.active, #dAdminHeader ul li a.active:hover {
+	font-weight: bolder;
+}
+#dAdminHeader ul li a span {
+	display: block;
+}
+.AdminList {
+	border-style: none;
+	display: block;
+	float: left;
+/*	clear: both;  */
+	position: relative;
+	top: 0;
+	width: 95%;
+}
+.AdminListHeader {
+	padding: 1px 4px 2px;
+	color: #FFF;
+	text-align: center;
+	background: #800000;
+	font: bold medium Arial, Helvetica, sans-serif;
+}
+.AdminRightCell {
+	text-align: right;
+}
+.AdminListItem {
+	margin: 3px;
+	text-align: left;
+	width: 600px;
+	background: #FFF;
+	font: small Arial, Helvetica, sans-serif;
+}
+.AltAdminListItem {
+	margin: 3px;
+	text-align: left;
+	width: 600px;
+	background: #EFEFEF;
+	font: small Arial, Helvetica, sans-serif;
+}
+.AdminImg {
+	margin-right: 5px;
+	margin-left: 5px;
+	border-style: none;
+}
+#ListBox {
+/*	border: thin solid #800000; */
+	min-height: 400px;
+	display: block;
+	float: left;
+/*	clear: left; */
+	width: 95%;
+	background: #FFF;
+}
+.Homearticlebox {
+	color: #B45D16;
+	float: left;
+	font-size: smaller;
+	margin-bottom: 5px;
+	margin-top: 2px;
+	padding: 0;
+	width: 350px;
+	background: #FEFEF0;
+}
+.articlebox, .Altarticlebox {
+	color: #b45d16;
+	padding: 6px;
+	font-size: smaller;
+	width: 95%;
+}
+.articlebox {
+	background: #FFF;
+}
+.Altarticlebox {
+	background: #FFF8EC;
+}
+#dArtileTitle.H1 {
+	font-size: x-large;
+	font-weight: bold;
+	color: #995117;
+	text-decoration: none;
+	text-align: center;
+	margin: 10px 25px 2px 5px;
+}
+.articletitle {
+	font-size: 14px;
+	font-weight: bold;
+	color: #995117;
+	text-decoration: none;
+	margin-right: 25px;
+	margin-left: 5px;
+}
+.articleMore {
+	font-size: small;
+	font-weight: 200;
+	color: #995117;
+	text-decoration: none;
+	margin-right: 25px;
+	margin-left: 5px;
+}
+.articleabstract {
+	padding: 6px 3px 5px 10px;
+	font-size: small;
+}
+#dArticleSupport {
+	width: 575px;
+}
+#dArticleBody {
+	padding: 5px;
+	float: left;
+	clear: right;
+}
+.ArticleFooter {
+	clear: left;
+	float: right;
+	clip: rect(auto, 25px, auto, auto);
+	margin-top: 5px;
+	margin-bottom: 25px;
+}
+.ArticleFooter A {
+	color: #800000;
+	font: 300 small Arial, Helvetica, sans-serif;
+}
+.comment {
+	padding: 4px 0;
+	font-size: smaller;
+}
+#ArticleDetailBox {
+	padding: 2px;
+	margin: 5px 7px 10px;
+	min-height: 400px;
+}
+#ArticleDetailBox H1 {
+	text-decoration: none;
+	margin-left: -10px;
+	font: bold large Arial, Helvetica, sans-serif;
+}
+#ContentTitleDiv {
+	padding: 3px 10px 5px;
+	margin-right: 3px;
+	margin-left: 3px;
+}
+#ContentBodyDiv {
+	padding: 5px 10px 15px;
+}
+div.article_entry_header {
+	height: 45px;
+	padding: 0 0 3px 50px;
+	vertical-align: bottom;
+	background: url('images/icon_blog.gif') no-repeat;
+}
+#MainShadow {
+	position: relative;
+	top: 2;
+	left: 10;
+	height: auto;
+	width: 750px;
+	filter: alpha(opacity=70);
+	opacity: 0.7;
+	background: #333;
+}
+#PopUpBackGround {
+	z-index: 1400;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	filter: alpha(opacity=70);
+	opacity: 0.7;
+	display: none;
+	background: #333;
+}
+#LoginDlg {
+	left: 275px;
+	top: 150px;
+	width: 325px;
+	height: 190px;
+	z-index: 1500;
+	position: fixed;
+	border: thin ridge #C60;
+	padding: 2px;
+	display: none;
+	background: White;
+}
+A.LoginDialog {
+	color: #800000;
+}
+#btnLogIn {
+	left: 200px;
+}
+#PictureDlg {
+	left: 400px;
+	top: 250px;
+	z-index: 1500;
+	position: fixed;
+	border: thin ridge #C60;
+	padding: 2px;
+	display: none;
+	background: Black;
+}
+#dCaption {
+	margin: 3px 5px 2px;
+	color: White;
+	height: 30px;
+}
+#dPictTitle {
+	color: #FFF;
+	font-weight: bold;
+	font-size: medium;
+	height: 26px;
+	vertical-align: middle;
+	background: #000;
+}
+.GaleryBtn {
+	width: 26px;
+	height: 25px;
+	vertical-align: middle;
+	text-align: center;
+}
+#container2 {
+	margin-right: 200px;
+	background: #FFF;
+}
+
+.ArticleRating {
+	float: right;
+	margin: 3px 75px 10px 10px;
+}
+.ratingStar {
+	font-size: 0;
+	width: 19px;
+	height: 19px;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	display: block;
+	background-repeat: no-repeat;
+}
+.filledRatingStar {
+	background: url(Images/filledbeer.gif);
+}
+.emptyRatingStar {
+	background: url(Images/EmptyBeer.gif);
+}
+.savedRatingStar {
+	background: url(Images/SavedBeer.gif);
+}
+div#content-inner-2col {
+	margin: 0 15px 20px 10px;
+	background: #FFF;
+}
+#content-inner-2col A {
+	color: #000;
+}
+div#first-column, div#third-column {
+	clear: both;
+	width: 180px;
+	min-height: 392px;
+}
+div#first-column {
+	float: left;
+	background: #E6BB70;
+}
+div#third-column {
+	float: right;
+	background: #E6BB70;
+}
+div#first-column a, div#third-column a {
+	color: #521300;
+	vertical-align: middle;
+	font-weight: bold;
+	font-size: 11px;
+	text-decoration: none;
+}
+div#first-column hr {
+	color: #521300;
+	width: 85%;
+}
+#rightcol {
+	float: right;
+	padding: 1px 5px 2px;
+	width: 160px;
+	font-size: 10px;
+	min-height: 400px;
+	height: 100%;
+	background: #E6BB70;
+}
+div#first-column div.text {
+	padding: 6px;
+	text-align: justify;
+}
+div#first-column div.sectiontitle, div#third-column .sectiontitle span {
+	padding: 6px 6px 6px 3px;
+	color: #f7b76b;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	background: #706a6a;
+}
+div#content {
+	margin: 3px;
+}
+div#content-2coll {
+	margin: 5px 10px 5px 200px;
+}
+div#content-2colr {
+	margin: 0;
+}
+#left-content {
+	float: left;
+	margin: 5px 200px 5px 10px;
+	background: #C0F;
+}
+#right-content {
+	margin: 5px 10px 5px 200px;
+}
+div#content-inner {
+	border: 1px solid gray;
+	min-height: 392px;
+}
+.AddEditFrame {
+	border: thin solid #800000;
+	background: #FEFEFE;
+}
+.formField {
+	background: #FFF url(Images/form_field_bkgd.png) top repeat-x left;
+	font: Tahoma, "Trebuchet MS", Arial, sans-serif;
+	font-size: 11px;
+	padding: 4px;
+	border: 1px solid #8C8C8C;
+}
+#dOpenId {
+	margin-left: 25px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+.openid_identifier {
+	background-position: left center;
+	background: transparent url(/images/openid.gif) no-repeat scroll left center;
+	height: 28px;
+	padding-left: 18px;
+	margin: 5px 0 5px 25;
+	padding: 3px;
+	border: 1px solid #999;
+	width: 200px;
+	font: 100% Trebuchet MS, Helvetica, sans-serif;
+}
+.openid_identifier_dlg {
+	background-position: left center;
+	background: transparent url(/images/openid.gif) no-repeat scroll left center;
+	height: 18px;
+	padding-left: 18px;
+	margin: 5px 0 5px 25;
+	padding: 3px;
+	border: 1px solid #999;
+	width: 200px;
+	font: 100% Trebuchet MS, Helvetica, sans-serif;
+}
+.TodayDayStyle {
+	color: #FFF;
+	background: #900;
+}
+.DayStyle {
+	text-align: center;
+	vertical-align: text-top;
+	background: White;
+}
+.DayHeaderStyle {
+	color: #FFF;
+	background: #900;
+}
+.TitleStyle {
+	color: White;
+	background: #900;
+	font: bold small Tahoma;
+}
+.OtherMonthDayStyle {
+	background: #CCC;
+}
+.AddEvent {
+	width: 125px;
+	vertical-align: middle;
+	text-align: center;
+}
+.AddEvent a {
+	font-weight: bold;
+	color: #800000;
+	text-decoration: none;
+}
+.EventTitle {
+	color: #900;
+	font: bold medium Arial, Helvetica, sans-serif;
+}
+#dEventLink a {
+	color: #521300;
+	vertical-align: middle;
+	font-weight: bold;
+	font-size: 11px;
+	text-decoration: none;
+}
+.AdminTable {
+	table-layout: fixed;
+	empty-cells: show;
+	text-align: center;
+	border-style: none;
+	border-width: 0;
+	padding: 0;
+	margin: 5px 20px 5px 40px;
+	width: 95%;
+}
+fieldset {
+	color: #000;
+	font: small Arial, Helvetica, sans-serif;
+}
+img.ProductThumb {
+	float: left;
+	margin: 5px;
+	border-width: 1px;
+}
+fieldset.OrderItems {
+	padding: 3px 15px;
+	margin-right: 20px;
+	margin-left: 20px;
+	width: 200px;
+}
+#AddEditDetails {
+	border: 1px solid #800000;
+	background: #FEFEFE;
+}
+.AlbumPhoto {
+	padding: 2px;
+	vertical-align: bottom;
+	text-align: center;
+	width: 100px;
+}
+.AlbumShadow {
+	float: left;
+	margin-top: 8px;
+	margin-left: 20px;
+	background: #aaa;
+}
+.AlbumShadow img {
+	margin: -4px 4px 4px -4px;
+	display: block;
+	position: relative;
+	padding: 4px;
+	border-left: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #888;
+	border-bottom: 1px solid #888;
+	background: #fcfcfc;
+}
+.PhotoTitle {
+	clear: left;
+}
+.AlbumPhoto a {
+	color: #800000;
+	font-weight: bold;
+}
+#GalleryTitle h2 {
+	color: #800;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+
+}
+.CenterItem
+{
+    text-align: right;
+    padding-right: 2px;
+}
